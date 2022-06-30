@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body class="body">
+    <header class="header">
+      <div class="header_content">
+        <a><img src="img/logo-desktop.svg" class="header_logo" /></a>
+        <nav class="main-nav main-nav--closed">
+          <button class="nav-toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+            <img src="img/menu-button-mobile.svg">
+          </button>
+          <ul class="nav-list">
+            <li class="nav-list-item"><a href="#">О Находке</a></li>
+            <li class="nav-list-item"><a href="#">Пройдите опрос</a></li>
+            <li class="nav-list-item"><a href="#">Проекты Находки</a></li>
+            <li class="nav-list-item"><a href="#">Обсуждения</a></li>
+            <li class="nav-list-item"><a href="#">Новости</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <div class="main_content">
+        <div class="breadcrumbs">
+          <img
+            src="img/breadcrumbs_arrow_frame.svg"
+            height="24"
+            width="8"
+            class="breadcrubms_image"
+          />
+          <a class="breadcrumbs_text" href="#">Назад</a>
+        </div>
+        <h3 class="main_title">Поделитесь идеей</h3>
+        <form class="form">
+          <div class="form_fields">
+            <div class="form_field">
+              <div class="form_field--question">
+                <div class="form_field--question-number">1</div>
+                <div class="form_field--question-text">
+                  Расскажите кем вы приходитесь городу
+                </div>
+              </div>
+              <div class="form_field--variants">
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="residentTypeChoice1"
+                    name="residentType"
+                    value="local"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label
+                    for="residentTypeChoice1"
+                    class="form_field--radio-label"
+                    >Местный житель</label
+                  >
+                </div>
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="residentTypeChoice2"
+                    name="residentType"
+                    value="guest"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label
+                    for="residentTypeChoice2"
+                    class="form_field--radio-label"
+                    >Гость города</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form_field">
+              <div class="form_field--question">
+                <div class="form_field--question-number">2</div>
+                <div class="form_field--question-text">Ваш возраст</div>
+              </div>
+              <div class="form_field--variants">
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="ageChoice2"
+                    name="age"
+                    value="19to25"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label for="ageChoice2" class="form_field--radio-label"
+                    >19-25</label
+                  >
+                </div>
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="ageChoice3"
+                    name="age"
+                    value="26to35"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label for="ageChoice3" class="form_field--radio-label"
+                    >26-35</label
+                  >
+                </div>
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="ageChoice4"
+                    name="age"
+                    value="36to45"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label for="ageChoice4" class="form_field--radio-label"
+                    >36-45</label
+                  >
+                </div>
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="ageChoice5"
+                    name="age"
+                    value="46to55"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label for="ageChoice5" class="form_field--radio-label"
+                    >46-55</label
+                  >
+                </div>
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="ageChoice6"
+                    name="age"
+                    value="56to65"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label for="ageChoice6" class="form_field--radio-label"
+                    >56-65</label
+                  >
+                </div>
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="ageChoice7"
+                    name="age"
+                    value="over66"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label for="ageChoice7" class="form_field--radio-label"
+                    >Больше 66</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form_field">
+              <div class="form_field--question">
+                <div class="form_field--question-number">3</div>
+                <div class="form_field--question-text">
+                  Вы хотите рассказать
+                </div>
+              </div>
+              <div class="form_field--variants">
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="topicChoice1"
+                    name="topic"
+                    value="problem"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label for="topicChoice1" class="form_field--radio-label"
+                    >О проблеме и ее решении</label
+                  >
+                </div>
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="topicChoice2"
+                    name="topic"
+                    value="cityIdea"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label for="topicChoice2" class="form_field--radio-label"
+                    >О идее города</label
+                  >
+                </div>
+                <div class="form_field--variant">
+                  <input
+                    type="radio"
+                    id="topicChoice3"
+                    name="topic"
+                    value="uniquePlaces"
+                    class="visually-hidden form_field--radio-input"
+                    required
+                  />
+                  <label for="topicChoice3" class="form_field--radio-label"
+                    >Об уникальных интересных местах Находки</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="form_field">
+              <div class="form_field--question">
+                <div class="form_field--question-number">4</div>
+                <div class="form_field--question-text">
+                  Загрузите картинку и укажите место на карте
+                </div>
+              </div>
+              <div class="form_add-info-buttons-wrapper">
+                <button class="add-info-button add-location">
+                  <img src="img/location-icon.svg" width="24" height="24" />
+                  <p>Указать геолокацию</p>
+                </button>
+                <button class="add-info-button add-image">
+                  <img src="img/image-icon.svg" width="24" height="24" />
+                  <input required type="file" id="img" name="img" accept="image/*" class="visually-hidden">
+                  <label for="img">Добавить изображение</label>
+                </button>
+              </div>
+            </div>
+            <div class="form_field">
+              <div class="form_field--question">
+                <div class="form_field--question-number">5</div>
+                <div class="form_field--question-text">
+                  Укажите тему и расскажите идею
+                </div>
+              </div>
+              <div class="form_textareas-wrapper">
+                <textarea
+                  placeholder="Тема"
+                  id="theme"
+                  name="theme"
+                  class="form_textarea form_textarea--theme"
+                  rows="1"
+                  required
+                ></textarea>
+                <textarea
+                  placeholder="Идея"
+                  id="idea"
+                  name="idea"
+                  class="form_textarea form_textarea--idea"
+                  required
+                ></textarea>
+              </div>
+              <div class="consent_wrapper">
+                <input id="consent" name="consent" type="checkbox" required/>
+                <label for="consent"
+                  >Я согласен с
+                  <a href="#" class="consent_link"
+                    >политикой обработки персональных данных</a
+                  ></label
+                >
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="form_submit-button">Отправить</button>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer_content">
+        <a class="footer_logo-link"
+          ><img src="img/footer-logo-desktop.svg" class="footer_logo"
+        /></a>
+        <div class="footer_menu">
+          <ul class="footer_menu-list">
+            <li class="footer_menu-list-item"><a href="#">О находке</a></li>
+            <li class="footer_menu-list-item">
+              <a href="#">Пройдите опрос</a>
+            </li>
+            <li class="footer_menu-list-item">
+              <a href="#">План комплексного развития</a>
+            </li>
+            <li class="footer_menu-list-item"><a href="#">Обсуждения</a></li>
+            <li class="footer_menu-list-item"><a href="#">Новости</a></li>
+          </ul>
+        </div>
+        <div class="footer_contacts">
+          <div class="footer_contacts--mail">
+            <img src="img/mail.svg" width="24" height="24" />
+            <p>call@my-nakhodka.ru</p>
+          </div>
+          <div class="footer_contacts--policy">
+            <a href="#">Политика обработки персональных данных</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
